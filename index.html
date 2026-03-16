@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dhruv Patel | Portfolio</title>
+<title>Dhruv Patel | Electrical Engineering Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -26,7 +25,7 @@ color:#e2e8f0;
 overflow-x:hidden;
 }
 
-/* PARTICLES */
+/* PARTICLE BACKGROUND */
 
 #particles-js{
 position:fixed;
@@ -43,11 +42,11 @@ nav{
 position:fixed;
 top:0;
 width:100%;
-padding:20px 8%;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(2,6,23,.8);
+background:rgba(2,6,23,.85);
 backdrop-filter:blur(10px);
 z-index:10;
 }
@@ -119,15 +118,22 @@ font-size:36px;
 margin-bottom:40px;
 }
 
-/* TECH STACK */
+/* ABOUT */
 
-.stack{
+.about-box{
+max-width:800px;
+line-height:1.7;
+}
+
+/* SKILLS */
+
+.skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
 }
 
-.stack-card{
+.skill-card{
 background:rgba(255,255,255,.05);
 padding:25px;
 border-radius:10px;
@@ -135,7 +141,7 @@ text-align:center;
 transition:.3s;
 }
 
-.stack-card:hover{
+.skill-card:hover{
 transform:translateY(-8px);
 background:rgba(255,255,255,.08);
 }
@@ -163,6 +169,17 @@ background:rgba(255,255,255,.08);
 .project-card h3{
 color:#38bdf8;
 margin-bottom:10px;
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:2px solid #38bdf8;
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:25px;
 }
 
 /* CONTACT */
@@ -198,8 +215,9 @@ color:#64748b;
 
 <ul>
 <li><a href="#about">About</a></li>
-<li><a href="#stack">Tech Stack</a></li>
+<li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
@@ -211,14 +229,15 @@ color:#64748b;
 
 <div>
 
-<h1>Transforming Concepts Into <span>Seamless Experiences</span></h1>
+<h1>Hi, I'm <span>Dhruv Patel</span></h1>
 
 <p>
-Electrical Engineering student passionate about power systems,
-renewable energy and intelligent electrical technologies.
+Electrical Engineering student passionate about power systems, renewable energy
+and intelligent electrical technologies. I enjoy building engineering solutions
+that solve real world problems.
 </p>
 
-<a href="#projects" class="btn">Show My Work</a>
+<a href="#projects" class="btn">View My Work</a>
 
 </div>
 
@@ -230,27 +249,39 @@ renewable energy and intelligent electrical technologies.
 
 <h2 class="section-title">About Me</h2>
 
+<div class="about-box">
+
 <p>
-B.Tech Electrical Engineering student with CGPA 8.4.  
-Interested in power systems, renewable energy and electrical simulations.
+I am currently pursuing B.Tech in Electrical Engineering with CGPA 8.4.
+My interests include power systems, renewable energy integration,
+smart grids, and electrical simulations using MATLAB and Simulink.
 </p>
+
+<p>
+I enjoy solving complex engineering problems and developing innovative
+solutions through simulations and practical design approaches.
+</p>
+
+</div>
 
 </section>
 
-<!-- STACK -->
+<!-- SKILLS -->
 
-<section id="stack">
+<section id="skills">
 
-<h2 class="section-title">Tech Stack</h2>
+<h2 class="section-title">Technical Skills</h2>
 
-<div class="stack">
+<div class="skills">
 
-<div class="stack-card">MATLAB</div>
-<div class="stack-card">Simulink</div>
-<div class="stack-card">Python</div>
-<div class="stack-card">C Programming</div>
-<div class="stack-card">Power Systems</div>
-<div class="stack-card">Power Electronics</div>
+<div class="skill-card">Power Systems</div>
+<div class="skill-card">Power Electronics</div>
+<div class="skill-card">MATLAB</div>
+<div class="skill-card">Simulink</div>
+<div class="skill-card">Python</div>
+<div class="skill-card">C Programming</div>
+<div class="skill-card">Renewable Energy</div>
+<div class="skill-card">Electrical Machines</div>
 
 </div>
 
@@ -260,28 +291,63 @@ Interested in power systems, renewable energy and electrical simulations.
 
 <section id="projects">
 
-<h2 class="section-title">Projects</h2>
+<h2 class="section-title">Engineering Projects</h2>
 
 <div class="projects">
 
 <div class="project-card">
 <h3>Power Quality Disturbance Classification</h3>
-<p>ANN based MATLAB model for detecting power disturbances.</p>
+<p>
+Developed MATLAB/Simulink model to simulate voltage sag, swell and harmonics
+and classify disturbances using Artificial Neural Networks.
+</p>
 </div>
 
 <div class="project-card">
-<h3>Solar Monitoring System</h3>
-<p>Real-time monitoring of solar voltage and current.</p>
+<h3>Solar Power Monitoring System</h3>
+<p>
+Designed a monitoring system capable of tracking solar voltage,
+current and power generation efficiency in real time.
+</p>
 </div>
 
 <div class="project-card">
-<h3>DC-DC Buck Converter</h3>
-<p>Efficient converter design for voltage regulation.</p>
+<h3>DC-DC Buck Converter Design</h3>
+<p>
+Designed and analyzed a DC-DC buck converter to efficiently regulate
+output voltage using switching techniques.
+</p>
 </div>
 
 <div class="project-card">
 <h3>Relay Coordination Analysis</h3>
-<p>Power system protection using relay coordination.</p>
+<p>
+Performed protection coordination analysis to ensure selective
+fault isolation in electrical power systems.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Bachelor of Technology – Electrical Engineering</h3>
+<p>2022 – Present</p>
+<p>CGPA: 8.4</p>
+</div>
+
+<div class="timeline-item">
+<h3>Key Subjects</h3>
+<p>Power Systems, Electrical Machines, Control Systems, Power Electronics</p>
 </div>
 
 </div>
@@ -292,15 +358,17 @@ Interested in power systems, renewable energy and electrical simulations.
 
 <section id="contact" class="contact">
 
-<h2 class="section-title">Contact</h2>
+<h2 class="section-title">Get In Touch</h2>
 
-<p>Email: <a href="#">example@email.com</a></p>
+<p>Email: <a href="#">your.email@gmail.com</a></p>
+<p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
+<p>GitHub: <a href="#">GitHub Profile</a></p>
 
 </section>
 
 <footer>
 
-<p>© 2026 Dhruv Patel</p>
+<p>© 2026 Dhruv Patel | Electrical Engineering Portfolio</p>
 
 </footer>
 
@@ -330,8 +398,7 @@ interactivity:{
 detect_on:"canvas",
 events:{
 onhover:{enable:true,mode:"grab"},
-onclick:{enable:true,mode:"push"},
-resize:true
+onclick:{enable:true,mode:"push"}
 },
 modes:{
 grab:{distance:140,line_linked:{opacity:1}},
@@ -344,5 +411,4 @@ retina_detect:true
 </script>
 
 </body>
-
 </html>
