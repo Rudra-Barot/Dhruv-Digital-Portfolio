@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Dhruv Patel | Electrical Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,36 +18,26 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
 }
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-<script>
-particlesJS("particles-js", {
-  "particles": {
-    "number": { "value": 80 },
-    "color": { "value": "#38bdf8" },
-    "shape": { "type": "circle" },
-    "opacity": { "value": 0.5 },
-    "size": { "value": 3 },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#38bdf8",
-      "opacity": 0.4
-    },
-    "move": { "enable": true, "speed": 2 }
-  },
-  "interactivity": {
-    "events": {
-      "onhover": { "enable": true, "mode": "grab" },
-      "onclick": { "enable": true, "mode": "push" }
-    }
-  }
-});
-</script>
 body{
-background:#0f172a;
+background:#020617;
 color:#e2e8f0;
 overflow-x:hidden;
+}
+
+/* PARTICLE BACKGROUND */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+canvas{
+display:block;
 }
 
 /* NAVBAR */
@@ -60,14 +50,13 @@ padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(15,23,42,0.8);
+background:rgba(2,6,23,0.8);
 backdrop-filter:blur(10px);
-z-index:1000;
+z-index:100;
 }
 
 nav h2{
 color:white;
-letter-spacing:2px;
 }
 
 nav ul{
@@ -78,9 +67,8 @@ list-style:none;
 
 nav ul li a{
 text-decoration:none;
-color:#cbd5f5;
+color:#94a3b8;
 font-size:14px;
-transition:0.3s;
 }
 
 nav ul li a:hover{
@@ -96,7 +84,6 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:0 20px;
-background:linear-gradient(180deg,#0f172a,#020617);
 }
 
 .hero h1{
@@ -133,7 +120,6 @@ padding:100px 10%;
 .section-title{
 font-size:35px;
 margin-bottom:40px;
-color:white;
 }
 
 /* ABOUT */
@@ -145,7 +131,7 @@ gap:40px;
 }
 
 .about-box{
-background:rgba(255,255,255,0.03);
+background:rgba(255,255,255,0.05);
 padding:30px;
 border-radius:10px;
 }
@@ -159,27 +145,26 @@ gap:25px;
 }
 
 .skill-card{
-background:rgba(255,255,255,0.04);
+background:rgba(255,255,255,0.05);
 padding:25px;
 border-radius:10px;
 transition:0.3s;
 }
 
 .skill-card:hover{
-transform:translateY(-5px);
-background:rgba(255,255,255,0.07);
+transform:translateY(-6px);
 }
 
 /* PROJECTS */
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
 .project-card{
-background:rgba(255,255,255,0.04);
+background:rgba(255,255,255,0.05);
 padding:25px;
 border-radius:10px;
 transition:0.3s;
@@ -187,7 +172,6 @@ transition:0.3s;
 
 .project-card:hover{
 transform:translateY(-8px);
-background:rgba(255,255,255,0.08);
 }
 
 .project-card h3{
@@ -214,7 +198,7 @@ text-align:center;
 color:#64748b;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -229,10 +213,11 @@ grid-template-columns:1fr;
 }
 
 </style>
-
 </head>
 
 <body>
+
+<div id="particles-js"></div>
 
 <nav>
 
@@ -256,9 +241,8 @@ grid-template-columns:1fr;
 <h1>Hi, I'm <span>Dhruv Patel</span></h1>
 
 <p>
-Electrical Engineering student passionate about power systems, renewable energy,
-and intelligent electrical technologies. I enjoy designing engineering solutions
-that solve real-world energy challenges.
+Electrical Engineering student with CGPA 8.4 passionate about power systems,
+renewable energy and smart electrical technologies.
 </p>
 
 <a href="#projects" class="btn">View Projects</a>
@@ -279,13 +263,9 @@ that solve real-world energy challenges.
 
 <h3>Education</h3>
 
-<p>
-Bachelor of Technology in Electrical Engineering
-</p>
-
-<p>
-CGPA: <b>8.4</b>
-</p>
+<p>Bachelor of Technology</p>
+<p>Electrical Engineering</p>
+<p><b>CGPA: 8.4</b></p>
 
 </div>
 
@@ -294,11 +274,10 @@ CGPA: <b>8.4</b>
 <h3>Interests</h3>
 
 <p>
-Power Systems  
-Renewable Energy  
-Power Electronics  
-Smart Grids  
-Electrical Machine Analysis
+Power Systems<br>
+Renewable Energy<br>
+Power Electronics<br>
+Smart Grid Technologies
 </p>
 
 </div>
@@ -316,51 +295,23 @@ Electrical Machine Analysis
 <div class="skills">
 
 <div class="skill-card">
-
 <h3>Power Systems</h3>
-
-<p>
-Load flow analysis  
-Power quality  
-Protection systems
-</p>
-
+<p>Load Flow Analysis<br>Protection Systems</p>
 </div>
 
 <div class="skill-card">
-
 <h3>Power Electronics</h3>
-
-<p>
-DC-DC converters  
-PWM rectifiers  
-Inverters
-</p>
-
+<p>DC-DC Converters<br>Inverters</p>
 </div>
 
 <div class="skill-card">
-
 <h3>Simulation Tools</h3>
-
-<p>
-MATLAB  
-Simulink  
-PSCAD
-</p>
-
+<p>MATLAB<br>Simulink</p>
 </div>
 
 <div class="skill-card">
-
 <h3>Programming</h3>
-
-<p>
-MATLAB  
-Python  
-C
-</p>
-
+<p>Python<br>C Programming</p>
 </div>
 
 </div>
@@ -376,48 +327,23 @@ C
 <div class="projects">
 
 <div class="project-card">
-
 <h3>Power Quality Disturbance Classification</h3>
-
-<p>
-Developed MATLAB/Simulink model to simulate voltage sag,
-swell, harmonics, and flicker and classify disturbances
-using Artificial Neural Networks.
-</p>
-
+<p>ANN based MATLAB/Simulink model to classify power quality disturbances.</p>
 </div>
 
 <div class="project-card">
-
 <h3>Solar Power Monitoring System</h3>
-
-<p>
-Designed a solar power monitoring system capable of
-tracking voltage, current, and efficiency in real time.
-</p>
-
+<p>System for monitoring solar voltage, current and efficiency.</p>
 </div>
 
 <div class="project-card">
-
 <h3>DC-DC Buck Converter</h3>
-
-<p>
-Designed and analyzed a buck converter to regulate
-output voltage efficiently using switching techniques.
-</p>
-
+<p>Designed efficient converter for voltage regulation.</p>
 </div>
 
 <div class="project-card">
-
 <h3>Relay Coordination Analysis</h3>
-
-<p>
-Studied protection schemes and relay coordination
-to ensure selective fault isolation in power systems.
-</p>
-
+<p>Study of protection relays for selective fault isolation.</p>
 </div>
 
 </div>
@@ -430,20 +356,55 @@ to ensure selective fault isolation in power systems.
 
 <h2 class="section-title">Contact</h2>
 
-<p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
-
+<p>Email: <a href="#">example@email.com</a></p>
 <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
-
 <p>GitHub: <a href="#">GitHub Profile</a></p>
 
 </section>
 
 <footer>
 
-<p>© 2026 Dhruv Patel | Electrical Engineering Portfolio</p>
+<p>© 2026 Dhruv Patel | Portfolio</p>
 
 </footer>
 
-</body>
+<!-- PARTICLES SCRIPT -->
 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+
+particlesJS("particles-js", {
+"particles":{
+"number":{"value":80,"density":{"enable":true,"value_area":800}},
+"color":{"value":"#38bdf8"},
+"shape":{"type":"circle"},
+"opacity":{"value":0.5},
+"size":{"value":3,"random":true},
+"line_linked":{
+"enable":true,
+"distance":150,
+"color":"#38bdf8",
+"opacity":0.4,
+"width":1
+},
+"move":{"enable":true,"speed":2}
+},
+"interactivity":{
+"detect_on":"canvas",
+"events":{
+"onhover":{"enable":true,"mode":"grab"},
+"onclick":{"enable":true,"mode":"push"}
+},
+"modes":{
+"grab":{"distance":140,"line_linked":{"opacity":1}},
+"push":{"particles_nb":4}
+}
+},
+"retina_detect":true
+});
+
+</script>
+
+</body>
 </html>
