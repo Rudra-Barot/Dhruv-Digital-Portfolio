@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,7 +7,7 @@
 
 <title>Dhruv Patel | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,345 +18,220 @@ box-sizing:border-box;
 }
 
 body{
-
-font-family:"Sora",sans-serif;
-background:#0a0a0f;
+font-family:"Outfit",sans-serif;
+background:#0b0b12;
 color:white;
 overflow-x:hidden;
-
 }
 
-/* ---------------- background aurora ---------------- */
+/* glowing gradient background */
 
 body::before{
-
 content:"";
 position:fixed;
-width:900px;
-height:900px;
-
-background:radial-gradient(circle,#7c4dff,transparent 70%);
-filter:blur(200px);
-opacity:.5;
-
-top:-300px;
+width:700px;
+height:700px;
+background:radial-gradient(circle,#6c63ff,transparent 70%);
+filter:blur(160px);
+top:-200px;
 left:-200px;
-
+opacity:.6;
 z-index:-1;
-
 }
 
 body::after{
-
 content:"";
 position:fixed;
-
-width:900px;
-height:900px;
-
-background:radial-gradient(circle,#00d4ff,transparent 70%);
-filter:blur(200px);
-
-bottom:-300px;
+width:700px;
+height:700px;
+background:radial-gradient(circle,#00e1ff,transparent 70%);
+filter:blur(160px);
+bottom:-200px;
 right:-200px;
-
-opacity:.5;
+opacity:.6;
 z-index:-1;
-
 }
 
-/* ---------------- nav ---------------- */
+/* navbar */
 
 nav{
-
 position:fixed;
 width:100%;
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:1.4rem 8vw;
-
-background:rgba(10,10,15,.5);
+background:rgba(10,10,20,.6);
 backdrop-filter:blur(12px);
-
 border-bottom:1px solid rgba(255,255,255,.05);
-
 z-index:100;
-
 }
 
 .logo{
-
 font-family:"Space Grotesk";
 font-weight:700;
 font-size:1.2rem;
-
-letter-spacing:-0.02em;
-
 }
 
 .nav-links{
-
 display:flex;
 gap:2rem;
-
 }
 
 .nav-links a{
-
 text-decoration:none;
-color:#9b9b9b;
+color:#9e9e9e;
 font-size:.9rem;
-
 transition:.25s;
-
 }
 
 .nav-links a:hover{
-
 color:white;
-
 }
 
-/* ---------------- hero ---------------- */
+/* hero */
 
 .hero{
-
 min-height:100vh;
-
 display:flex;
 align-items:center;
-
 padding:0 8vw;
-
-}
-
-.hero-content{
-
-max-width:900px;
-
-}
-
-.hero-tag{
-
-font-size:.8rem;
-letter-spacing:.2em;
-text-transform:uppercase;
-
-color:#00d4ff;
-
-margin-bottom:1.5rem;
-
 }
 
 .hero-title{
-
-font-size:clamp(3rem,6vw,6rem);
+font-size:clamp(3rem,6vw,5.5rem);
 font-family:"Space Grotesk";
+line-height:1.1;
 
-line-height:1;
-
-background:linear-gradient(90deg,#7c4dff,#00d4ff);
+background:linear-gradient(90deg,#6c63ff,#00e1ff);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 
-margin-bottom:1.2rem;
-
+margin-bottom:1rem;
 }
 
 .hero-sub{
-
-color:#9b9b9b;
-font-size:1.1rem;
-
-line-height:1.7;
-
 max-width:600px;
-
-margin-bottom:2.5rem;
-
+color:#9e9e9e;
+font-size:1.1rem;
+line-height:1.7;
+margin-bottom:2rem;
 }
 
-/* ---------------- buttons ---------------- */
+/* buttons */
 
 .buttons{
-
 display:flex;
 gap:1rem;
-
 }
 
 .btn{
-
 padding:14px 28px;
-
 border-radius:8px;
-
 text-decoration:none;
 font-size:.9rem;
-
 transition:.3s;
-
 }
 
 .primary{
-
-background:linear-gradient(90deg,#7c4dff,#00d4ff);
-
+background:linear-gradient(90deg,#6c63ff,#00e1ff);
 }
 
 .primary:hover{
-
 transform:translateY(-4px);
-
-box-shadow:0 10px 40px rgba(0,0,0,.6);
-
+box-shadow:0 15px 40px rgba(0,0,0,.6);
 }
 
 .outline{
-
 border:1px solid rgba(255,255,255,.15);
-
 }
 
 .outline:hover{
-
-border-color:#7c4dff;
-
+border-color:#6c63ff;
 }
 
-/* ---------------- stats ---------------- */
-
-.stats{
-
-display:flex;
-gap:3rem;
-
-margin-top:3rem;
-
-}
-
-.stat h2{
-
-font-family:"Space Grotesk";
-font-size:2rem;
-
-}
-
-.stat p{
-
-font-size:.8rem;
-color:#9b9b9b;
-
-}
-
-/* ---------------- sections ---------------- */
+/* sections */
 
 section{
-
 padding:120px 8vw;
-
 }
 
 .section-title{
-
-font-size:2.4rem;
 font-family:"Space Grotesk";
-
+font-size:2.5rem;
 margin-bottom:2rem;
-
 }
 
-.section-sub{
-
-color:#9b9b9b;
-max-width:700px;
-
-margin-bottom:3rem;
-
-}
-
-/* ---------------- project cards ---------------- */
+/* project cards */
 
 .projects{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:2rem;
-
 }
 
 .project{
-
-background:#141420;
-
+background:#151520;
 padding:2rem;
-
-border-radius:14px;
-
+border-radius:16px;
 border:1px solid rgba(255,255,255,.05);
-
 transition:.35s;
-
 }
 
 .project:hover{
-
 transform:translateY(-8px);
-border-color:#7c4dff;
-
+border-color:#6c63ff;
 }
 
-.project h3{
-
-margin-bottom:.6rem;
-
-}
-
-.project p{
-
-color:#9b9b9b;
-font-size:.9rem;
-line-height:1.6;
-
-}
-
-/* ---------------- skills ---------------- */
+/* skills */
 
 .skills{
-
 display:flex;
 flex-wrap:wrap;
-gap:12px;
-
+gap:10px;
 }
 
 .skill{
-
-background:#141420;
+background:#151520;
 padding:10px 18px;
-
 border-radius:30px;
-
 font-size:.8rem;
-
 border:1px solid rgba(255,255,255,.05);
-
+transition:.25s;
 }
 
-/* ---------------- footer ---------------- */
+.skill:hover{
+border-color:#6c63ff;
+transform:translateY(-2px);
+}
+
+/* education timeline */
+
+.timeline{
+border-left:2px solid #6c63ff;
+padding-left:2rem;
+}
+
+.timeline-item{
+margin-bottom:2rem;
+}
+
+.timeline-item h3{
+font-size:1.1rem;
+}
+
+.timeline-item span{
+font-size:.85rem;
+color:#9e9e9e;
+}
+
+/* footer */
 
 footer{
-
-padding:50px;
+padding:60px;
 text-align:center;
-
 border-top:1px solid rgba(255,255,255,.05);
-
-color:#9b9b9b;
-
+color:#9e9e9e;
 }
 
 </style>
@@ -376,7 +250,6 @@ color:#9b9b9b;
 <a href="#education">Education</a>
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
-<a href="#vision">Vision</a>
 <a href="#contact">Contact</a>
 
 </div>
@@ -385,49 +258,73 @@ color:#9b9b9b;
 
 <section class="hero">
 
-<div class="hero-content">
-
-<div class="hero-tag">
-Electrical Engineer · Developer
-</div>
+<div>
 
 <h1 class="hero-title">
 Dhruv Patel
 </h1>
 
 <p class="hero-sub">
-Engineer passionate about technology, innovation, and building real-world solutions that combine engineering thinking with entrepreneurial vision.
+Electrical engineer passionate about building intelligent systems, solving real-world problems, and creating impactful technology products.
 </p>
 
 <div class="buttons">
 
 <a class="btn primary">View Projects</a>
-<a class="btn outline">Get in Touch</a>
-
-</div>
-
-<div class="stats">
-
-<div class="stat">
-<h2>6+</h2>
-<p>Projects</p>
-</div>
-
-<div class="stat">
-<h2>3</h2>
-<p>Internships</p>
-</div>
-
-<div class="stat">
-<h2>8.4</h2>
-<p>CGPA</p>
-</div>
+<a class="btn outline">Contact Me</a>
 
 </div>
 
 </div>
 
 </section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Power Quality Disturbance Classifier</h3>
+<p>ANN based classification of voltage sag, swell and harmonics using MATLAB.</p>
+</div>
+
+<div class="project">
+<h3>Solar Forecast System</h3>
+<p>Machine learning model to predict solar power generation.</p>
+</div>
+
+<div class="project">
+<h3>Smart Energy Dashboard</h3>
+<p>Interactive dashboard for monitoring energy consumption.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<span class="skill">Python</span>
+<span class="skill">MATLAB</span>
+<span class="skill">Simulink</span>
+<span class="skill">Machine Learning</span>
+<span class="skill">Power Electronics</span>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Dhruv Patel
+
+</footer>
 
 </body>
 </html>
